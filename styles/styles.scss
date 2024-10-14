@@ -5,6 +5,14 @@
   color: white;
 }
 
+.wrapper {
+  img {
+    margin: auto;
+    
+    display: block;
+    width: clamp(400px, 70vw, 800px);
+  }
+}
 // .header {
 //   position: relative;
 //   background-color: lime;

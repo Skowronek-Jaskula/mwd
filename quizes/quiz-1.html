@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/helpers/grid.css" />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/quizes.css" />
+
   </head>
   <body>
     <nav class="nav">
@@ -25,15 +26,7 @@
       <a href="/quizes/quiz-3.html">QUIZ 3</a>
     </nav>
     <section class="container">
-      <style>
-        @scope {
-          :scope {
-            pre {
-              padding-inline: 1.5rem 1rem;
-            }
-          }
-        }
-      </style>
+     
       <div class="row">
         <div class="col-6">
           <h1>QUIZ 1</h1>
@@ -98,6 +91,15 @@
       <hr />
 
       <div class="row">
+        <style>
+          @scope {
+            & {
+              pre {
+                padding-inline: 1.5rem 1rem;
+              }
+            }
+          }
+        </style>
         <div class="col-6">
           <h4 class="quiz__question">
             2. Which of the following methods is
@@ -419,5 +421,5 @@ p {
       <hr />
       <hr />
     </section>
-  </body>
+  </body>    
 </html>
