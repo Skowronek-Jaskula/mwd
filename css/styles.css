@@ -70,7 +70,7 @@ h1 {
   height: var(--sbne-nav-height);
   width: 100%;
   top: 0;
-  position: sticky;
+  position: fixed;
 }
 nav a {
   text-transform: uppercase;

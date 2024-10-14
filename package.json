@@ -1,0 +1,14 @@
+{
+  "name": "mwd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass styles/styles.scss dist/styles.css --watch --minify"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.79.5"
+  }
+}

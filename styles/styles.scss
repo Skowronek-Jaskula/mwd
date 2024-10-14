@@ -1,0 +1,83 @@
+@mixin special-char($heading){
+  @if ($heading) {
+    font-weight: 100;
+  }
+  color: white;
+}
+
+// .header {
+//   position: relative;
+//   background-color: lime;
+//   display: inline;
+//   &__quote {
+//     position: absolute;
+//     font-size: 4rem;
+//     font-family: fantasy;
+//     top: 20px;
+//     left: -20px;
+//     &:last-child {
+//       right: -20px;
+//       top: -20px;
+//       left: unset;
+//     }
+//   }
+// }
+.test {
+  position: relative;
+  background-color: limegreen;
+  z-index: 0;
+}
+header {
+  background-color: var(--sbne-color-main);
+  color: var(--sbne-white);
+  padding: 1rem;
+  position: sticky;
+  top: calc(var(--sbne-nav-height) + 1rem);
+}
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1rem;
+}
+aside {
+  outline: solid thin var(--sbne-color-main);
+  outline-offset: -1px;
+}
+
+footer {
+  background-color: var(--sbne-mid-gray);
+  padding: 1rem;
+}
+   
+.flex {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: auto;
+
+  &__content {
+    padding: 1rem;
+    background-color: #ff0000;
+    &-title {
+      @include special-char($heading: true);
+    }
+    
+
+    &-image {
+      width: 100px;
+    }
+
+    &--with-background {
+      @extend .flex__content;
+      @include special-char($heading: false);
+      background-color: #ff2288;
+      margin-top: auto;
+    }
+  }
+}
+
+
+
+
+// BEM

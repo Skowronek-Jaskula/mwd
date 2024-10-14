@@ -7,30 +7,8 @@
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/styles.css" />
-    <style>
-      header {
-        background-color: var(--sbne-color-main);
-        color: var(--sbne-white);
-        padding: 1rem;
-        position: sticky;
-        top: calc(var(--sbne-nav-height) + 1rem);
-      }
-      main {
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        gap: 1rem;
-      }
-      aside {
-        outline: solid thin var(--sbne-color-main);
-        outline-offset: -1px;
-      }
- 
-
-      footer {
-        background-color: var(--sbne-mid-gray);
-        padding: 1rem;
-      }
-    </style>
+    <link rel="stylesheet" href="/dist/styles.css" />
+    
   </head>
 
   <body>
@@ -51,23 +29,19 @@
     <!-- https://codepen.io/kevinpowell/pen/jOXwVVB -->
     <h1>Position: static, relative, absolute, fixed, sticky</h1>
 
+    <dialog>asdasd</dialog>
+    <dropdown>dsef</dropdown>
     <section class="showcase">
-      <header>HEADER</header>
+      <header class="header">
+        <span class="header__quote">"</span>
+        HEADER I'm the nice webpage!
+        <span class="header__quote">"</span>
+      </header>
 
       <main>
         <div>
           <article>
-            <h2>
-              <style>
-                @scope {
-                  :scope {
-                    position: relative;
-                    top: 30px;
-                    left: 440px;
-                  }
-                }
-              </style>
-              1st article title</h2>
+            <h2 class="test">1st article <i>title</i></h2>
           <p>
             Incididunt anim velit enim cupidatat proident ut amet aliquip enim
               culpa. Aliquip Lorem minim consectetur eiusmod qui in id ullamco
@@ -581,5 +555,6 @@
         fugiat incididunt dolor sunt ea sit.
       </p>
     </section>
+    
   </body>
 </html>
