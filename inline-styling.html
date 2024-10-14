@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="stylesheet" href="/css/styles.css" />
-    <style>
+     <style>
       .alert {
         background-color: var(--sbne-color-alert);
         color: var(--sbnt-color-accent);
@@ -19,6 +19,7 @@
         margin: 2rem auto;
       }
     </style>
+   
   </head>
 
   <body>
@@ -26,10 +27,6 @@
       <a href="https://codepen.io/kevinpowell/pen/jOXwVVB" target="_blank">css only</a>
       <a href="https://info.cern.ch/" target="_blank">internet start</a>
       <a class="current" href="/inline-styling.html">inline styling</a>
-      <!-- 
-<a href="/class-naming.html">class naming</a>
--->
-      <!--<a href="/display-inline-block.html">display: inline / block</a>-->
       <a href="/display-flex.html">flexbox</a>
       <a href="/position.html">position</a>
       <a href="/quizes/quiz-1.html">quiz 1</a>
@@ -50,14 +47,19 @@
       if (par) {
         const root = document.documentElement;
         const alertColor =
-          getComputedStyle(root).getPropertyValue("--sbne-color-alert");
+        getComputedStyle(root).getPropertyValue("--sbne-color-alert");
         if (root && alertColor) {
           par.style.color =
-            par.style.color !== "var(--sbne-color-alert)"
-              ? "var(--sbne-color-alert)"
-              : "";
+          par.style.color !== "var(--sbne-color-alert)"
+          ? "var(--sbne-color-alert)"
+          : "";
         }
       }
+      // if (par) {
+      //   if (alertColor) {
+      //     par.classList.toggle("ag-alert");
+      //   }
+      // }
     }
   </script>
 </html>

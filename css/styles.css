@@ -10,11 +10,12 @@
 
   --sbne-color-main: #2249a4;
   --sbne-color-highlight: #a4bdf5;
-
   --sbnt-color-accent: #fffb7f;
   --sbne-color-success: #a7dd3c;
   --sbne-color-alert: #c83619;
   --sbne-nav-height: 4rem;
+
+  --ag-color-alert: #68f0f0;
 }
 
 h1 {
@@ -111,4 +112,9 @@ pre {
   padding: 1.5rem 1rem 2rem;
   text-align: center;
   margin-bottom: 5rem;
+}
+
+.ag-alert {
+  background-color: var(--sbne-dark-gray);
+  color: var(--sbne-color-alert);
 }
